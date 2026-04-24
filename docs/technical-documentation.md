@@ -52,7 +52,7 @@ To maintain high data integrity, the contact form uses a custom validation layer
 
 ## 5. Innovation Highlights
 * **Staggered DOM Injection:** Rather than rendering all GitHub repositories at once, the logic uses an index-based `animationDelay` for smooth fade-in transitions.
-* **User-Centric Feedback:** The form submission process provides a multi-stage UI state: "Sending..." $\rightarrow$ "Message sent successfully!", ensuring the user is never left in an ambiguous state.
+* **User Feedback:** The form submission process provides a multi stage UI state: "Sending..." $\rightarrow$ "Message sent successfully! I'll get back to you ASAP", ensuring the user is never left in an ambiguous state.
 
 ---
 
