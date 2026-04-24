@@ -1,0 +1,272 @@
+/* Enable smooth scrolling for <a> links*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #d1d1eb;
+    /* Transition for theme switch */
+    transition: background-color 0.1s, color 0.3s; /* for smooth change */
+}/* Dark mode styles */
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+/* Header and Navigation */
+header {
+    background: #011a33; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 1%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav ul {
+    justify-content: center;
+    flex: 1;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #428ff2;
+
+}
+/* Section layouts*/
+section {
+    padding: 40px 10% ; 
+    background: white;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Section headings */
+#about h2, #projects h2, #contact h2 {
+    color: #ab82c2;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+#about p {
+    font-size: 16px; 
+    margin: 10px 0;
+}
+/* Greeting */
+#greeting-area {
+    font-size: 1.3em;
+    color: #6d5da8;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+}
+/* Filter buttons */
+.filter-buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-btn {
+    background: #f0f4ff;
+    border: 1px solid #91b6eb;
+    color: #074d9d;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #052e5c;
+    color: white;
+    border-color: #052e5c;
+}
+/* Project filtering */
+.project.hide {
+    display: none;
+}
+
+.project.show {
+    display: block;
+}
+
+/* Project grid styles */
+.project-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+    width: 100%;
+}
+.project {
+    background: #f0f4ff;
+    border: 1px solid #91b6eb;
+    padding: 20px;
+    border-radius: 8px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.project h3 {
+    color: #074d9d; 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.project p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #819ef2;
+    border-radius: 5px;
+    font-family: Geneva;
+    font-size: 14px;
+}
+
+button {
+    background: #052e5c;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #428ff2;
+}
+/* Form Feedback Messages */
+.status-message {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.status-message.success {
+    color: green;
+}
+
+.status-message.error {
+    color: red;
+}
+footer {
+    text-align: center;
+    color: #1f3f5f;
+    padding: 20px;
+}
+/* Dark Mode overrides */
+body.dark section {
+    background-color: #1e1e2e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+body.dark .filter-btn {
+    background: #2a2a3d;
+    color: #91b6eb;
+    border-color: #444466;
+}
+
+body.dark .filter-btn:hover,
+body.dark .filter-btn.active {
+    background: #428ff2;
+    color: white;
+}
+body.dark .project {
+    background-color: #2a2a3d;
+    border-color: #444466;
+}
+
+body.dark .project h3 {
+    color: #91b6eb;
+}
+
+body.dark #about h2, 
+body.dark #projects h2, 
+body.dark #contact h2 {
+    color: #c9a8e0;
+}
+
+body.dark input, 
+body.dark textarea {
+    background-color: #2a2a3d;
+    color: #f0f0f0;
+    border-color: #555588;
+}
+#expand-btn {
+    background: #f0f4ff;
+    border: 1px solid #91b6eb;
+    color: #074d9d;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#expand-btn:hover {
+    background: #052e5c;
+    color: white;
+}
+/* for smooth appearance */
+.project.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInEffect 0.5s forwards ease-out;
+}
+
+@keyframes fadeInEffect {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* smooth transition */
+#github-projects {
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
