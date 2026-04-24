@@ -35,7 +35,7 @@ To maintain high data integrity, the contact form uses a custom validation layer
 ---
 
 ## 3. Persistent State & Performance
-* **LocalStorage Integration:** The application persists user preferences—specifically the Dark/Light theme mode and the visitor's name across sessions. Upon `DOMContentLoaded`, the script performs a lookup in the browser's `localStorage` to reapply the user's previous visual or personalized settings.
+* **LocalStorage Integration:** The application persists user preferences specifically the Dark/Light theme mode and the visitor's name across sessions. Upon `DOMContentLoaded`, the script performs a lookup in the browser's `localStorage` to reapply the user's previous visual or personalized settings.
 * **Lightweight Performance:** No external libraries were used. By writing custom logic for DOM manipulation and filtering, the page load time is optimized, and the overall bundle size is minimal.
 
 ---
@@ -44,7 +44,7 @@ To maintain high data integrity, the contact form uses a custom validation layer
 
 | Challenge | Resolution |
 | :--- | :--- |
-| **Browser Native Validation** | Implemented `novalidate` on the form to allow for custom, CSS-styled error feedback instead of disruptive browser pop ups. |
+| **Browser Native Validation** | Implemented `novalidate` on the form to allow for custom, CSS styled error feedback instead of disruptive browser pop ups. |
 | **Layout Instability** | Resolved potential layout shifts during API renders by ensuring the container maintains height and consistent padding/margin rules. |
 | **State Sync** | Synchronized theme toggles by creating a centralized event listener that updates `localStorage` whenever the `<body>` class changes. |
 
@@ -57,7 +57,7 @@ To maintain high data integrity, the contact form uses a custom validation layer
 ---
 
 ## 6. Future Roadmap
-1.  **Database Integration:** Migration from `localStorage` to a server-side storage solution (e.g., Supabase or Firebase) for persistent contact message collection.
+1.  **Database Integration:** Migration from `localStorage` to a server side storage solution for persistent contact message collection.
 2.  **Modular CSS:** Transitioning to CSS Variables for easier theme maintenance and global color palette updates.
 3.  **SEO Optimization:** Implementation of semantic meta-tags to enhance search engine visibility.
 
