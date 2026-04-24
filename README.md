@@ -1,23 +1,30 @@
-# Portfolio Website (Assignment 3 - Advanced)
+# Portfolio Web Application 
 
-## 📝 Project Description
-This is an advanced iteration of my personal portfolio. Building on the previous assignment, this version integrates real time data from the GitHub API, implements UI state management, and features a session based visitor timer. As a Computer Science student at KFUPM, this project showcases my ability to handle asynchronous JavaScript and provide user feedback.
+A dynamic, responsive personal portfolio showcasing technical projects, and web develpment capabilities. This shows the integration of real time APIs, persistent state management, and custom interaction design.
 
-## Setup Instructions (Step-by-Step)
-1. **Clone the Repo** 
-2. **Navigate to Folder:** `cd [id-name-assignment3]`
-3. **Run Locally:** Simply open `index.html` in a modern web browser.
-4. **No API Key Required:** The site uses the public GitHub API.
-## How to Interact with the Site (User Guide)
-To see the full functionality of the advanced features, follow these steps:
-* **Step 1:** Look at the top of the browser. You will see a **Live Session Timer** counting your active exploration time.
-* **Step 2:** Scroll to the **GitHub Repositories** section. The site will automatically fetch my latest code. 
-* **Step 3:** Click the **"View More"** button. Observe the smooth, staggered fade-in animation as the list expands.
-* **Step 4:** Toggle the **Dark/Light Mode** (🌙/☀️ icon). Notice how the session timer and GitHub cards adapt their styling instantly.
-* **Step 5:** Use the **Contact Form**. Try submitting an invalid email to see the error validation logic in action, and submiting a correct form will save your name to greet you in your next visit.
-* **Step 6:** try loading the page without internet to get a feedback in the github section.
+## Live Demo
+Check out the live version of my portfolio here:  
+https://jawaher-hub.github.io/202257100-JawaherAwadallah-assignment4/
 
-## AI Usage Summary
-AI was used to optimize the asynchronous fetch logic and refine CSS keyframe animations for the project expansion feature, as well as documentation. 
-*Detailed breakdown is available in `docs/ai-usage-report.md`.*
+##  Features
+* **GitHub API Integration:** Automatically fetches and displays the latest public repositories.
+* **Responsive Filtering:** Filter project cards by category (Design, Technical, All) using data attributes.
+* **Custom Interaction Logic:** "View More/Less" expansion with staggered CSS fade-in animations.
+* **Persistent User Experience:** Uses `localStorage` to save user preferences (Dark/Light Mode) and personalize greetings.
+* **Advanced Form Validation:** Custom JavaScript RegEx-based email verification with `novalidate` support for a cohesive UI.
+* **Live Session Tracking:** Tracks user engagement time in real-time.
 
+## Technical Stack
+* **Frontend:** HTML5, CSS.
+* **Logic:** Vanilla JavaScript.
+* **API:** GitHub REST API v3.
+* **Hosting:** GitHub Pages.
+
+
+##  Development Approach
+This project was developed using a "Consultative AI" workflow. I utilized Gemini, ChatGPT, and Claude to brainstorm architectural patterns for asynchronous data fetching and form sanitization. Every line of code was manually audited, sanitized, and integrated to ensure a professional, secure, and performant implementation.
+
+## 🔗 Documentation
+For a deep dive into the implementation and AI collaboration details, refer to:
+- Technical Documentation
+- AI Usage Report
