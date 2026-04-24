@@ -117,7 +117,7 @@ function renderRepos(isExpanded) {
         repoCard.className = 'project tech show';
         repoCard.innerHTML = `
             <h3>${repo.name}</h3>
-            <a href="${repo.html_url}" target="_blank" style="color: #428ff2; text-decoration: none; font-weight: bold;">Link 🡢</a>
+            <a href="${repo.html_url}" target="_blank" style="color: #428ff2; text-decoration: none; font-weight: bold;">Link</a>
         `;
         githubBase.appendChild(repoCard);
     });
